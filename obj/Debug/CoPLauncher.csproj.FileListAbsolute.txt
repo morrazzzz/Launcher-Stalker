@@ -1,6 +1,3 @@
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\CoPLauncher.exe.config
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\CoPLauncher.exe
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\CoPLauncher.pdb
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Debug\CoPLauncher.csproj.AssemblyReference.cache
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Debug\App.g.cs
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Debug\CoPLauncher_MarkupCompile.cache
@@ -22,17 +19,6 @@ C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Debug\View\LaunchPage.baml
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Debug\View\NewModPage.baml
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Debug\View\SettingsPage.baml
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\CommonServiceLocator.dll
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\GalaSoft.MvvmLight.dll
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\GalaSoft.MvvmLight.Extras.dll
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\GalaSoft.MvvmLight.Platform.dll
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\System.Windows.Interactivity.dll
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\GalaSoft.MvvmLight.pdb
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\GalaSoft.MvvmLight.xml
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\GalaSoft.MvvmLight.Extras.xml
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
-C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Debug\GalaSoft.MvvmLight.Platform.xml
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Debug\CoPLauncher.csproj.CopyComplete
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Debug\View\MainWindow.g.cs
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Debug\View\MainWindow.baml
@@ -42,3 +28,17 @@ D:\S.T.A.L.K.E.R. Call of Pripyat\CoPLauncher.pdb
 D:\S.T.A.L.K.E.R. Call of Pripyat\CopLauncher\CoPLauncher.exe.config
 D:\S.T.A.L.K.E.R. Call of Pripyat\CopLauncher\CoPLauncher.exe
 D:\S.T.A.L.K.E.R. Call of Pripyat\CopLauncher\CoPLauncher.pdb
+C:\Users\ДаниилО\source\repos\CoPLauncher\CoPLauncher.exe.config
+C:\Users\ДаниилО\source\repos\CoPLauncher\CoPLauncher.exe
+C:\Users\ДаниилО\source\repos\CoPLauncher\CoPLauncher.pdb
+C:\Users\ДаниилО\source\repos\CoPLauncher\CommonServiceLocator.dll
+C:\Users\ДаниилО\source\repos\CoPLauncher\GalaSoft.MvvmLight.dll
+C:\Users\ДаниилО\source\repos\CoPLauncher\GalaSoft.MvvmLight.Extras.dll
+C:\Users\ДаниилО\source\repos\CoPLauncher\GalaSoft.MvvmLight.Platform.dll
+C:\Users\ДаниилО\source\repos\CoPLauncher\System.Windows.Interactivity.dll
+C:\Users\ДаниилО\source\repos\CoPLauncher\GalaSoft.MvvmLight.pdb
+C:\Users\ДаниилО\source\repos\CoPLauncher\GalaSoft.MvvmLight.xml
+C:\Users\ДаниилО\source\repos\CoPLauncher\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\ДаниилО\source\repos\CoPLauncher\GalaSoft.MvvmLight.Extras.xml
+C:\Users\ДаниилО\source\repos\CoPLauncher\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\ДаниилО\source\repos\CoPLauncher\GalaSoft.MvvmLight.Platform.xml

@@ -1,7 +1,6 @@
 C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\CoPLauncher.exe.config
 C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\CoPLauncher.exe
 C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\CoPLauncher.pdb
-C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\MainWindow.g.cs
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\View\DescrPage.g.cs
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\View\GraphicsPage.g.cs
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\View\LaunchPage.g.cs
@@ -10,7 +9,6 @@ C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\View\SettingsPage.g
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\App.g.cs
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\CoPLauncher_MarkupCompile.cache
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\CoPLauncher_MarkupCompile.lref
-C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\MainWindow.baml
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\View\DescrPage.baml
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\View\GraphicsPage.baml
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\View\LaunchPage.baml
@@ -22,3 +20,19 @@ C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\CoPLauncher.csproj.
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\CoPLauncher.csproj.CoreCompileInputs.cache
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\CoPLauncher.exe
 C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\CoPLauncher.pdb
+C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\CommonServiceLocator.dll
+C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\GalaSoft.MvvmLight.dll
+C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\GalaSoft.MvvmLight.Extras.dll
+C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\GalaSoft.MvvmLight.Platform.dll
+C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\System.Windows.Interactivity.dll
+C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\GalaSoft.MvvmLight.pdb
+C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\GalaSoft.MvvmLight.xml
+C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\GalaSoft.MvvmLight.Extras.xml
+C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\ДаниилО\source\repos\CoPLauncher\bin\Release\GalaSoft.MvvmLight.Platform.xml
+C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\CoPLauncher.csproj.AssemblyReference.cache
+C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\View\MainWindow.g.cs
+C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\View\MainWindow.baml
+C:\Users\ДаниилО\source\repos\CoPLauncher\obj\Release\CoPLauncher.csproj.CopyComplete
