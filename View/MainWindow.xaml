@@ -1,0 +1,171 @@
+﻿<Window x:Class="CoPLauncher.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoPLauncher"
+        xmlns:vm="clr-namespace:CoPLauncher.View.ViewModel"
+        mc:Ignorable="d"
+        Title="S.T.A.L.K.E.R. Scurlet Sunset" Height="600" Width="1000" MaxHeight="600" MaxWidth="1000" MinHeight="600" MinWidth="1000" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Background="DarkGray" ShowInTaskbar="True">
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <ControlTemplate x:Key="ExitButtonTemp" TargetType="Button">
+            <Grid x:Name="BtnClose">
+                <Label Content="{TemplateBinding Content}" Background="Transparent" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Border Name="OverBorder" Background="Red">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Opacity" Value="0.5"/>
+                            <Setter Property="CornerRadius" Value="3"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path=IsMouseOver, ElementName=BtnClose}" Value="true">
+                                    <Setter Property="Opacity" Value="0.1"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                </Border>
+                <Border Name="SelectedBorder" Background="Black">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Opacity" Value="0"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Button}}, Path=IsFocused}" Value="true">
+                                    <Setter Property="Opacity" Value="0.5"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                </Border>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="SlideMenuButtons" TargetType="Button">
+            <Grid Name="Btn" Height="80" Margin="0,0,0,5">
+                <Border Background="gray">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{DynamicResource ResourceKey=Img}" VerticalAlignment="Center" HorizontalAlignment="Left" Height="60" Width="60" Stretch="Fill" Margin="10,0,0,0"/>
+                        <Label Content="{TemplateBinding Content}" Background="Transparent" FontSize="17" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Label.Style>
+                                <Style TargetType="Label">
+                                    <Setter Property="Foreground" Value="Black"/>
+                                </Style>
+                            </Label.Style>
+                        </Label>
+                    </StackPanel>
+                </Border>
+                <Border Name="OverBorder" Background="AliceBlue">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Opacity" Value="0"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path=IsMouseOver, ElementName=Btn}" Value="true">
+                                    <Setter Property="Opacity" Value="0.1"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                </Border>
+                <Border Name="SelectedBorder" Background="AliceBlue">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Opacity" Value="0"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Button}}, Path=IsFocused}" Value="true">
+                                    <Setter Property="Opacity" Value="0.1"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                </Border>
+                <Border Name="SelectedBorder2" Background="Transparent">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Visibility" Value="Hidden"/>
+                            <Setter Property="BorderThickness" Value="5,0,0,0"/>
+                            <Setter Property="BorderBrush" Value="DarkRed"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Button}}, Path=IsFocused}" Value="true">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                </Border>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="TopMenuLabel" TargetType="Label">
+            <Grid Name="Label">
+                <Label Content="{TemplateBinding Content}" Background="Transparent" FontSize="30" VerticalAlignment="Center" FontFamily="TimesNewRoman">
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Setter Property="Foreground" Value="DarkRed"/>
+                        </Style>
+                    </Label.Style>
+                </Label>
+            </Grid>
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="290"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Frame Grid.Row="10" Grid.Column="10" NavigationUIVisibility="Hidden" Content="{Binding CurPage}"/>
+        <Grid Name="TopMenu" Grid.Row="0" Grid.ColumnSpan="2">
+            <Border BorderThickness="0,0,0,1" BorderBrush="LightGray" Background="Transparent">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="S.T.A.L.K.E.R. Алый Закат" Template="{StaticResource ResourceKey=TopMenuLabel}" Margin="10"/>
+                    <Button x:Name="CloseWindow" Content="X" Width="50" Height="30" ToolTip="Закрыть лаунчер" Margin="595,0,0,0" VerticalAlignment="Top" Click="CloseWindow_Click" Template="{StaticResource ResourceKey=ExitButtonTemp}"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+        <Grid Name="SlideMenu" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch">
+            <Border BorderThickness="1,0,1,1" BorderBrush="LightGray"/>
+            <Border BorderThickness="0" Background="Black" Opacity="0.6"/>
+            <StackPanel Orientation="Vertical">
+                <Button Template="{StaticResource ResourceKey=SlideMenuButtons}" Content="Запуск игры" Command="{Binding OpenHomePage}">
+                    <Button.Resources>
+                        <ImageSource x:Key="Img">
+                            res/icons/home.png
+                        </ImageSource>
+                    </Button.Resources>
+                </Button>
+                <Button Template="{StaticResource ResourceKey=SlideMenuButtons}" Content="Настройки Графики" Command="{Binding OpenGraphicsPage}">
+                    <Button.Resources>
+                        <ImageSource x:Key="Img">
+                            res/icons/graphics.png
+                        </ImageSource>
+                    </Button.Resources>
+                </Button>
+                <Button Template="{StaticResource ResourceKey=SlideMenuButtons}" Content="Настройки Игры" Command="{Binding OpenSettingsPage}">
+                    <Button.Resources>
+                        <ImageSource x:Key="Img">
+                            res/icons/settings.png
+                        </ImageSource>
+                    </Button.Resources>
+                </Button>
+                <Button Template="{StaticResource ResourceKey=SlideMenuButtons}" Content="Доп. Модификации" Command="{Binding OpenNewModPage}">
+                    <Button.Resources>
+                        <ImageSource x:Key="Img">
+                            res/icons/new_mod.png
+                        </ImageSource>
+                    </Button.Resources>
+                </Button>
+                <Button Template="{StaticResource ResourceKey=SlideMenuButtons}" Content="О моде и Разработчиках" Command="{Binding OpenDescrPage}">
+                    <Button.Resources>
+                        <ImageSource x:Key="Img">
+                            res/icons/descr.png
+                        </ImageSource>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+        </Grid>
+        
+    </Grid>
+</Window>

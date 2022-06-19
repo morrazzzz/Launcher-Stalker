@@ -1,0 +1,81 @@
+﻿<Page x:Class="CoPLauncher.View.LaunchPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CoPLauncher.View"
+      mc:Ignorable="d" 
+d:DesignHeight="520" d:DesignWidth="710"
+      Title="LaunchPage">
+    <Page.Resources>
+        <ControlTemplate x:Key="LaunchButtTemplate" TargetType="Button">
+            <Grid Name="Btn">
+                <Border Background="LightGray" BorderThickness="0">
+                    <StackPanel>
+                        <Border Name="SelectedButt" Background="Gray" BorderThickness="1">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="Opacity" Value="0"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=IsMouseOver, ElementName=Btn}" Value="true">
+                                            <Setter Property="Opacity" Value="0.3"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                        <Label Content="{TemplateBinding Content}" Background="Transparent" Foreground="Black" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="/CoPLauncher;component/View/res/Fonts/#MatterhornCTT" Margin="280,0,263,0" Width="167" FontWeight="Bold"></Label>
+                    </StackPanel>
+
+                </Border>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ButtonUpdateOneTwo" TargetType="Button">
+            <Border BorderBrush="ForestGreen" BorderThickness="1" CornerRadius="12">
+                <Border.Style>
+                    <Style TargetType="Border">
+                        <Setter Property="Opacity" Value="1"/>
+                        <Style.Triggers>
+                            <DataTrigger >
+                                
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+            </Border>
+        </ControlTemplate>
+            <ControlTemplate x:Key="LabelTemplate" TargetType="Label">
+            <Border x:Name="LabelTemp" BorderBrush="White" BorderThickness="1" CornerRadius="20" >
+                <Label Content="{TemplateBinding Content}" Background="Transparent" FontSize="50" FontFamily="/CoPLauncher;component/View/res/Fonts/#Graffiti1CTT" Foreground="DarkRed" ></Label>
+            </Border>
+        </ControlTemplate>
+        <ControlTemplate x:Key="GroupBoxTemplate" TargetType="GroupBox">
+            <GroupBox ></GroupBox>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ProgressBarStyle" TargetType="ProgressBar">
+            <Border Background="Gray" BorderBrush="Green" BorderThickness="1" CornerRadius="12">
+                <Border.Style>
+                    <Style TargetType="Border">
+                        <Setter Property="Opacity" Value="1"/>
+                    </Style>
+                </Border.Style>
+                <ProgressBar>
+                    <ProgressBar.Style>
+                        <Style TargetType="ProgressBar">
+                            <Setter Property="Opacity" Value="0.8"/>
+                            <Style.Triggers>
+                            </Style.Triggers>
+                        </Style>
+                    </ProgressBar.Style>
+                </ProgressBar>
+            </Border>
+        </ControlTemplate>
+    </Page.Resources>
+    <Grid>
+        <Image HorizontalAlignment="Center" Grid.Row="0" VerticalAlignment="Center" Stretch="Fill" Source="res/Background/back_5.jpg"/>
+        <Button Name="LaunchGameBtn" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="60" Background="Black" Opacity="0.6" Content="Запустить игру" Template="{StaticResource ResourceKey=LaunchButtTemplate}" Click="LaunchGameBtn_Click" />
+        <Button Name="DownNewVersion" Content="Обновить" Width="150" Height="50" Margin="550,405,10,65" IsEnabled="False" Template="{StaticResource ResourceKey=ButtonUpdateOneTwo}"/>
+        <Button Name="CheckVersion" Content="Проверить обновления" Width="150" Height="50" Margin="10,405,550,65" Template="{StaticResource ResourceKey=ButtonUpdateOneTwo}"/>
+        <ProgressBar Name="SearchProgressBar" Minimum="0" Maximum="100" Margin="175,405,175,65" Template="{StaticResource ResourceKey=ProgressBarStyle}"/>
+    </Grid>
+</Page>
