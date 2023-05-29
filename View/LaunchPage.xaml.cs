@@ -21,6 +21,8 @@ namespace CoPLauncher.View
     /// </summary>
     public partial class LaunchPage : Page
     {
+        bool close_launcher = false;
+
         public LaunchPage()
         {
             InitializeComponent();
@@ -28,8 +30,13 @@ namespace CoPLauncher.View
 
         private void LaunchGameBtn_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("Stalker-COP");
-            Application.Current.Shutdown();
+            if (close_launcher == true)
+                Application.Current.Shutdown();
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            close_launcher = true;
         }
     }
 }

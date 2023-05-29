@@ -77,5 +77,6 @@ d:DesignHeight="520" d:DesignWidth="710"
         <Button Name="DownNewVersion" Content="Обновить" Width="150" Height="50" Margin="550,405,10,65" IsEnabled="False" Template="{StaticResource ResourceKey=ButtonUpdateOneTwo}"/>
         <Button Name="CheckVersion" Content="Проверить обновления" Width="150" Height="50" Margin="10,405,550,65" Template="{StaticResource ResourceKey=ButtonUpdateOneTwo}"/>
         <ProgressBar Name="SearchProgressBar" Minimum="0" Maximum="100" Margin="175,405,175,65" Template="{StaticResource ResourceKey=ProgressBarStyle}"/>
+        <CheckBox Content="Закрыть лаунчер после входа в игру" HorizontalAlignment="Left" Margin="478,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.533,0.662" Checked="CheckBox_Checked"/>
     </Grid>
 </Page>
