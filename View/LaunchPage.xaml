@@ -84,5 +84,7 @@ d:DesignHeight="520" d:DesignWidth="710"
             <ComboBoxItem Content="ЗП"/>
         </ComboBox>
         <Label Content="Выбор части сталкера" HorizontalAlignment="Left" Margin="568,35,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox_Keys" HorizontalAlignment="Left" Margin="441,73,0,0" ToolTip="Ключи для запуска XRay, не опытному пользователю лучше сюда ничего не писать." TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_Keys_TextChanged"/>
+        <Label Content="Ключи для запуска" HorizontalAlignment="Left" Margin="577,69,0,0" VerticalAlignment="Top" Background="Transparent" Foreground="#FFF4F52F"/>
     </Grid>
 </Page>

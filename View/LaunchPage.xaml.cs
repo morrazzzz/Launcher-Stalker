@@ -42,14 +42,15 @@ namespace CoPLauncher.View
             else
                 close_launcher = false;
 
-            string path = null;
-            bool fileExitsPath = false;
+            string keys = TextBox_Keys.Text;
+            string path;
+            bool fileExitsPath;
             if (mode_stalker_start == 1)
             {
                 path = @"bin\xr_3da.exe";
                 fileExitsPath = File.Exists(path);
                 if (fileExitsPath)
-                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(path) { UseShellExecute = true });
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(path, keys) { UseShellExecute = true });
                 else
                     MessageBox.Show($"Файл не найден: {path}. Проверьте наличие файла.", "Файл не найден", MessageBoxButton.OK, MessageBoxImage.Error);
             }
@@ -58,7 +59,7 @@ namespace CoPLauncher.View
                 path = @"bin\xrEngine.exe";
                 fileExitsPath = File.Exists(path);
                 if (fileExitsPath)
-                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(path) { UseShellExecute = true });
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(path, keys) { UseShellExecute = true });
                 else
                     MessageBox.Show($"Файл не найден: {path}. Проверьте наличие файла.", "Файл не найден", MessageBoxButton.OK, MessageBoxImage.Error);
             }    
@@ -67,7 +68,7 @@ namespace CoPLauncher.View
                 path = @"bin\xrEngine.exe";
                 fileExitsPath = File.Exists(path);
                 if (fileExitsPath)
-                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(path) { UseShellExecute = true });
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(path, keys) { UseShellExecute = true });
                 else
                     MessageBox.Show($"Файл не найден: {path}. Проверьте наличие файла.", "Файл не найден", MessageBoxButton.OK, MessageBoxImage.Error);
             }
@@ -88,6 +89,11 @@ namespace CoPLauncher.View
                 mode_stalker_start = 2;  
             else if (selectionItem == 2)
                 mode_stalker_start = 3;
+        }
+
+        private void TextBox_Keys_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
