@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
-
+using System.IO;
 namespace CoPLauncher.View
 {
     /// <summary>
@@ -31,15 +31,51 @@ namespace CoPLauncher.View
             InitializeComponent();
         }
 
-        private void LaunchGameBtn_Click(object sender, RoutedEventArgs e)
-        {
-            if (close_launcher == true)
-                Application.Current.Shutdown();
-        }
-
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
-            close_launcher = true;
+        }
+
+        private void LaunchGameBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (CheckBox_close_launcher.IsChecked == true)
+                close_launcher = true;
+            else
+                close_launcher = false;
+
+            string path = null;
+            bool fileExitsPath = false;
+            if (mode_stalker_start == 1)
+            {
+                path = @"bin\xr_3da.exe";
+                fileExitsPath = File.Exists(path);
+                if (fileExitsPath)
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(path) { UseShellExecute = true });
+                else
+                    MessageBox.Show($"Файл не найден: {path}. Проверьте наличие файла.", "Файл не найден", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else if (mode_stalker_start == 2)
+            {
+                path = @"bin\xrEngine.exe";
+                fileExitsPath = File.Exists(path);
+                if (fileExitsPath)
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(path) { UseShellExecute = true });
+                else
+                    MessageBox.Show($"Файл не найден: {path}. Проверьте наличие файла.", "Файл не найден", MessageBoxButton.OK, MessageBoxImage.Error);
+            }    
+            else if (mode_stalker_start == 3)
+            {
+                path = @"bin\xrEngine.exe";
+                fileExitsPath = File.Exists(path);
+                if (fileExitsPath)
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(path) { UseShellExecute = true });
+                else
+                    MessageBox.Show($"Файл не найден: {path}. Проверьте наличие файла.", "Файл не найден", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+                MessageBox.Show($"Режим не выбран.", "Режим не выбран", MessageBoxButton.OK, MessageBoxImage.Error);
+
+           if (close_launcher)
+                Application.Current.Shutdown();
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
