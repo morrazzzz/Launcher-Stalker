@@ -120,8 +120,8 @@
         <Grid Name="TopMenu" Grid.Row="0" Grid.ColumnSpan="2">
             <Border BorderThickness="0,0,0,1" BorderBrush="LightGray" Background="Transparent">
                 <StackPanel Orientation="Horizontal">
-                    <Label Content="S.T.A.L.K.E.R. Алый Закат" Template="{StaticResource ResourceKey=TopMenuLabel}" Margin="10"/>
-                    <Button x:Name="CloseWindow" Content="X" Width="50" Height="30" ToolTip="Закрыть лаунчер" Margin="595,0,0,0" VerticalAlignment="Top" Click="CloseWindow_Click" Template="{StaticResource ResourceKey=ExitButtonTemp}"/>
+                    <Label Content="Launcher for S.T.A.L.K.E.R" Template="{StaticResource ResourceKey=TopMenuLabel}" Margin="10"/>
+                    <Button x:Name="CloseWindow" Content="X" Width="46" Height="30" ToolTip="Закрыть лаунчер" Margin="595,0,0,0" VerticalAlignment="Top" Click="CloseWindow_Click" Template="{StaticResource ResourceKey=ExitButtonTemp}"/>
                 </StackPanel>
             </Border>
         </Grid>
@@ -150,14 +150,7 @@
                         </ImageSource>
                     </Button.Resources>
                 </Button>
-                <Button Template="{StaticResource ResourceKey=SlideMenuButtons}" Content="Доп. Модификации" Command="{Binding OpenNewModPage}">
-                    <Button.Resources>
-                        <ImageSource x:Key="Img">
-                            res/icons/new_mod.png
-                        </ImageSource>
-                    </Button.Resources>
-                </Button>
-                <Button Template="{StaticResource ResourceKey=SlideMenuButtons}" Content="О моде и Разработчиках" Command="{Binding OpenDescrPage}">
+                <Button Template="{StaticResource ResourceKey=SlideMenuButtons}" Content="Информация о лаунчере" Command="{Binding OpenDescrPage}">
                     <Button.Resources>
                         <ImageSource x:Key="Img">
                             res/icons/descr.png

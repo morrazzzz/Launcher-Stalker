@@ -16,7 +16,6 @@ namespace CoPLauncher.View.ViewModel
         private Page Descr = new DescrPage();
         private Page Settings = new SettingsPage();
         private Page Graphics = new GraphicsPage();
-        private Page NewMod = new NewModPage();
         private Page _CurPage = new LaunchPage();
 
         public Page CurPage
@@ -51,13 +50,6 @@ namespace CoPLauncher.View.ViewModel
             get
             {
                 return new RelayCommand(() => CurPage = Graphics);
-            }
-        }
-        public ICommand OpenNewModPage
-        {
-            get
-            {
-                return new RelayCommand(() => CurPage = NewMod);
             }
         }
     }

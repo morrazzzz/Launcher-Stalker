@@ -56,7 +56,6 @@ E:\D\Repo\Launcher-Stalker\obj\Release\View\MainWindow.g.cs
 E:\D\Repo\Launcher-Stalker\obj\Release\View\DescrPage.g.cs
 E:\D\Repo\Launcher-Stalker\obj\Release\View\GraphicsPage.g.cs
 E:\D\Repo\Launcher-Stalker\obj\Release\View\LaunchPage.g.cs
-E:\D\Repo\Launcher-Stalker\obj\Release\View\NewModPage.g.cs
 E:\D\Repo\Launcher-Stalker\obj\Release\View\SettingsPage.g.cs
 E:\D\Repo\Launcher-Stalker\obj\Release\App.g.cs
 E:\D\Repo\Launcher-Stalker\obj\Release\GeneratedInternalTypeHelper.g.cs
@@ -66,7 +65,6 @@ E:\D\Repo\Launcher-Stalker\obj\Release\View\MainWindow.baml
 E:\D\Repo\Launcher-Stalker\obj\Release\View\DescrPage.baml
 E:\D\Repo\Launcher-Stalker\obj\Release\View\GraphicsPage.baml
 E:\D\Repo\Launcher-Stalker\obj\Release\View\LaunchPage.baml
-E:\D\Repo\Launcher-Stalker\obj\Release\View\NewModPage.baml
 E:\D\Repo\Launcher-Stalker\obj\Release\View\SettingsPage.baml
 E:\D\Repo\Launcher-Stalker\obj\Release\CoPLauncher.g.resources
 E:\D\Repo\Launcher-Stalker\obj\Release\CoPLauncher.Properties.Resources.resources
